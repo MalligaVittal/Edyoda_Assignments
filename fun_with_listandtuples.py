@@ -4,7 +4,7 @@ Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 '''
 
 
-def Sort_Tuple(tup):
+def Sort(tup):
     n = len(tup)
     for i in range(1, n):
         key = tup[i]
@@ -14,4 +14,4 @@ def Sort_Tuple(tup):
             j -= 1
         tup[j + 1] = key
     return tup
-print(Sort_Tuple([(1,5), (5,2), (12,0), (9,100), (12,90)]))
+print(Sort([(1,5), (5,2), (12,0), (9,100), (12,90)]))
